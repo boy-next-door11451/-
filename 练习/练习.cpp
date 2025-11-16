@@ -11,6 +11,7 @@ using std::endl;
 
 class yuan {
 public: 
+int a;
 	float r;
 	yuan(float r) {
 		this->r = r;
