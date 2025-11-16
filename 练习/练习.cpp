@@ -9,7 +9,6 @@ using std::cin;
 using std::endl;
 
 
-
 class yuan {
 public: 
 	float r;
