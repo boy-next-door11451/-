@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<iostream>
 #include <string>
@@ -9,26 +9,108 @@ using std::cin;
 using std::endl;
 
 
-class yuan {
-public: 
-int a;
-	float r;
-	yuan(float r) {
-		this->r = r;
-	}
-	float c() {
-		return 2 * 3.14 * r;
-	}
-	float s() {
-		return 3.14 * r * r;
-	}
+
+class sharp{
+public:
+     float r;
+     sharp(float r){
+		this->r=r;
+	 }
+	 virtual float c();
+     virtual float s();
 };
+
+class circle:sharp{
+	public:
+	
+};
+
 int main()
 {
-	yuan r1(2.5);
-	cout << r1.c() << endl << r1.s() << endl;
+
+
 	return 0;
 }
+
+// class book {
+// private:
+// 	int count=0;
+// 	string name;
+// public:
+// 	book(string name) {
+// 		this->name = name;
+// 	}
+// 	string get_name() {
+// 		return name;
+// 	}
+// 	int get_count() {
+// 		return count;
+// 	}
+// 	void count_add() {
+// 		count++;
+// 	}
+// };
+
+// int main()
+// {
+// 	book b1("高等数学"); cout << b1.get_name() << "库存；" << b1.get_count()<<endl;
+// 	b1.count_add();
+// 	cout << b1.get_name() << "库存；" << b1.get_count()<<endl;
+// 	book b2("大学英语");cout<<b2.get_name()<< "库存；" << b2.get_count() << endl;
+// 	b2.count_add();
+// 	cout << b2.get_name() << "库存；" << b2.get_count() << endl;
+// 	return 0;
+// }
+
+
+
+//class book{
+//private:
+//    int count;
+//	string name;
+//public:
+//	book(string name){
+//		this->name=name;
+//	}
+//	string get_name(){
+//		return name;
+//	}
+//	int get_count(){
+//	    return count;
+//	}
+//	int count_add(){
+//		count++;
+//	}
+//};
+//
+//int main()
+//{
+//	book b1("楂樼瓑鏁板??");cout<<b1.get_name()<<"搴撳瓨"<<b1.get_count();
+//	b1.count_add();
+//	book b1("楂樼瓑鏁板??");cout<<b1.get_name()<<"搴撳瓨"<<b1.get_count();
+//	return 0;
+//}
+
+
+// class yuan {
+// public: 
+// 	float r;
+// 	yuan(float r) {
+// 		this->r = r;
+// 	}
+// 	float c() {
+// 		return 2 * 3.14 * r;
+// 	}
+// 	float s() {
+// 		return 3.14 * r * r;
+// 	}
+// };
+// int main()
+// {
+// 	yuan r1(2.5);
+// 	cout << r1.c() << endl << r1.s() << endl;
+// 	return 0;
+// }
 
 //int main()
 //{
